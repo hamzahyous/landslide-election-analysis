@@ -21,6 +21,9 @@ You can either create a local server quickly in your VS Code terminal, or use Li
 - Gallup - third party polling data
 - Other sources cited in the page sources section
 
+## Bells and Whistles
+- I completed View Coordination (2pts)
+- I also completed live deployment (1pt) (https://landslide-election-analysis.vercel.app/)
 ## My 3 Visualizations
 1) Historic Electoral College Comparison
 
