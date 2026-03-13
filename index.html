@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The 2024 Election: Takeaways</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+
+  <section class="intro">
+    <h1>The 2024 Election: Takeaways</h1>
+    <p class="authname">Remixed By: Hamzah Yousuf</p>
+    <figure>
+      <img src="/assets/debate-02.jpg" class="introimg">
+      <figcaption>Picture from their first debate (Credits to US News).</figcaption>
+    </figure>
+    <h2>Overview</h2>
+    <p>
+      This article was remixed off of a piece titled "The 2024 Election by the Numbers", written by the Council on Foreign Relations (CFR). The article sought to examine the margins by which Donald Trump beat Kamala Harris in the 2024 presidential election. The main takeaway can be summed up from the provided exerpt below:
+      <p>"Early election coverage described Trump’s victory as a landslide. But whether you go by the Electoral College vote or the popular vote, it was anything but. The 312 Electoral College votes that Trump won are just six more than Joe Biden won in 2020, twenty less than Barack Obama won in 2012, and fifty-three less than Obama won in 2008. Trump’s Electoral College performance pales in comparison to Franklin Delano Roosevelt’s landslide victory in 1936 (523 electoral votes), Lyndon Johnson’s in 1964 (486), Richard Nixon’s in 1972 (520), or Ronald Reagan’s in 1984 (525). In terms of the popular vote, more people voted for someone not named Trump for president than voted for Trump in 2024, and his margin of victory over Harris was 1.5 percentage points. That is the fifth smallest margin of victory in the thirty-two presidential races held since 1900" (Lindsay, 2024).</p>
+      <p>The visualizations provided in the article showed the 2024 Electoral College results, popular vote margins, and provided some election spesific data as well. To build on this, my intent was to go beyond the examples provided by CFR and examine how claims of "landslide victory" held up in the context of American elections over the last 100-150 years. I collected data on elections starting in the year 1900 and to the most recent in 2024, compiling data on 32 elections. I used the Atlas of US Presidential Elections, collected by David Leip. </p>
+  </section>
+
+  <section class="comparison-section">
+    <h2>Comparing 2024 to Historic Landslides</h2>
+    <figure>
+      <div id="comparison-chart"></div>
+      
+      <div class="controls">
+        <button id="toggle2024">Show 2024</button>
+        <button id="toggleLoss">Show Loss Threshold</button>
+      </div>
+    </figure>
+
+    <br>
+    <p>Examining Trump's victory in 2024 in the context of historic landslides, whether it was Reagan in 1984 or Roosevelt in 1936, highlights how his 58% of electoral votes won pale in comparison to margins of the past. While this outcome secured him the presidency, it was far from a comfortable victory, calling into question whether the result reflects a sweeping national mandate or a hard fought electoral victory. I would argue that this chart demonstrates how politics as a whole as shifted over the last 100 or so years. From the 1960s to the 1980s, one candidate typically won by a wide margin, reflecting how popular they were and how well their ideas played with the American public. No election is as emblematic of this as Reagan in 1984, winning 49 states in the electoral college, and getting 17 million more votes than his opponent, Walter Mondale. No matter your political affiliation, the American people broadly did seem to believe in the policies and messaging of the Reagan platform, borne out in the widespread support of his campaign across the nation. In our unprecedented era of partisan politics, your affiliation plays a significant role in how election outcomes are interpreted. To better understand this disconnect, we can go beyond electoral results and take a look at the public response right after the election in 2024 to where it is today.</p>
+  
+  </section>
+
+
+  <section>
+    <h2>A Sweeping Mandate or a Divided Country?</h2>
+    <p>Trump's messaging on this subject was clear, his victory was not close and his opponents were unpopular. In public remarks following the election, Trump argued that voters had given him a sweeping mandate, stating, “The American people have given us a mandate, a mandate like few people thought possible" (NPR, 2025). </p>
+    <p>If Trump's claims of a powerful and commanding mandate are true, you expect the numbers to bear this out. After all, if he was truly given "a mandate few thought possible", it would be safe to assume many approved of the job he was doing, and as he enacted that mandate as he currently is, his approval ratings would rise. Collecting data across the last 5 presidents to assume office (including Trump who assumed the office of the president twice), I attempted to see if the favorability numbers supported his claims. This data was collected from UC Santa Barbara's initiative, "The American Presidency Project" on each president's approval ratings throughout their terms. I narrowed in on the first year in office, as that is the sample for Trump's second term, and it is the period where presidents are most ambitious with their agenda, or mandate.</p>
+    <br>
+    <figure>
+      <div id="approval-chart"></div>
+      <figcaption>Note: Toggling 2024 in the preceding chart also emphasizes Trump's current term on this chart.</figcaption>
+    </figure>
+    <p>Besides Trump, in every presidency we see positive public sentiment to start their a presidential term that wavers over the course of their first year. This makes sense as the "feel good" sentiment falters and the realities of office are faced. This is the case for everyone except Bush in 2000 due to 9/11 creating a rallying effect in 2001. However I would argue that the rallying effect post 9/11 sets a very strict standard for a powerful mandate, as his net approval rating was close to 80. Not only is Trump is nowhere near that, in both of his terms he has the lowest net rating to begin the term, and by the end of his first year in 2017, and now in 2025, he ended with the lowest approval rating as well. This to me demystifies the narrative of Trump's mandate, reframing his presidency for what it is -- an increasingly divisive figure governing along party lines in a time of unprecedented division.</p>
+    <p>I think the data in this chart could also speak to a general loss of trust in the political process, as voters seem to reliably lose faith in the president throughout their term. This seems to especially be the case in the last 12-16 years, as approval ratings seem to start at lower net figures then they used to, and they tumble by greater margins then they did decades ago. That is why it is worth pausing to consider if landslide election results are still possible, and what conditions would prompt such dominant results given our current political climate.</p>
+  </section>
+
+  <section>
+    <h2>Voting in the post-landslide Era</h2>
+    <p>As American politics has become increasingly polarized in recent decades, an interesting question to explore is what it means for the future. Of course, nothing has fundamentally changed about our system, but the way in which we think of our leaders clearly has, especially in how favorability has declined in recent years. Broadly speaking, trust in the system is near an all time low. According to polls conducted by Gallup, 30% of Americans believe that the current two major political parties do an adequate job of representing the American people. </p>
+    <p>If voters feel the current system does not represent them, how do we deal with that dissatisfaction? One possibility that struggles to gain mainstream traction is alternatives to the two-party system. How to make a third party feasible is an entirely different discussion, with discussions of coalition building and ranked choice voting belonging in more strategic contexts. With my third visualization, I wanted to explore how likely Americans would be to vote for a third party candidate, and how those views differ by party affiliation. Among US adults, 55% say they were at least somewhat likely to vote for a third party candidate in an election for president, congressional candidate or governor. I was curious to see how to see how these numbers changed based on party affiliation.</p>
+    <div id="thirdparty-chart"></div>
+
+    <p>These results confirm a widespread consideration of third party candidates across the American republic, especially with voters who identify as independent. With this knowledge, it is worth considering what the political landscape is shaping to be, with Americans tired of the current system, favorability of candidates never reaching outside of their respective parties, and alternatives trying to become mainstream. All in all, the data seems to suggest 2024 was not a landslide in the ways it was claimed to be, any talk of a strong mandate is severely dampened by crumbling favorability and approval of the system near all time lows. Whether or not third parties become feasible is left up to systemic changes that haven't occurred, but the data I've explored highlights that the desire is there. </p>
+
+  </section>
+
+  <section>
+    <h3>Sources</h3>
+    <ol>
+      <li><a href="https://news.gallup.com/poll/696521/americans-need-third-party-offer-soft-support.aspx" title="Gallup Third Party Poll" target="_blank">Gallup Third Party Poll</a></li>
+      <li><a href="https://www.presidency.ucsb.edu/statistics/data/donald-j-trump-2nd-term-public-approval" target="_blank">UCSB "The American Presidency Project" Approval Data</a></li>
+      <li><a href="https://www.npr.org/2025/03/26/nx-s1-5336728/trump-is-making-many-moves-and-he-says-he-has-a-mandate-that-justifies-them" target="_blank">NPR: Trump's Mandate</a></li>
+      <li><a href="https://www.cfr.org/articles/2024-election-numbers" target="_blank">CFR: The 2024 Election by the Numbers</a></li>
+    </ol>
+    
+  </section>
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
